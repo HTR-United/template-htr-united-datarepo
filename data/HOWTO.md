@@ -1,0 +1,2 @@
+The repository is set up so that you create one folder per source here, in which you put your XML directly.
+You can simply change the yml file in the .github/workflows folder if you want to change this.

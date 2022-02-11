@@ -1,0 +1,31 @@
+schema: "https://htr-united.github.io/schema/2021-10-15/schema.json"
+title: Repository’s Title
+url: 'Link to your data repository'
+project-name: >
+    Your project name
+project-website: 'Link to your project'
+authors:
+    - name: 'Author Name'
+      surname: 'Author Firstname'
+      roles:
+      - 'transcriber'
+description: >
+  Description 
+language:
+  - eng
+  - fra
+script: 
+  - Latn
+script-type: 'only-manuscript'
+time: 
+  notBefore: "1500"
+  notAfter: "1300"
+hands: 
+  count: '1-per-folder'
+  precision: 'exact'
+license:
+  - {name: 'CC-BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/'}
+format: 'Alto-XML'
+volume:
+  - metric: 'files'
+    count: 10
