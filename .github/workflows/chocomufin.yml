@@ -20,5 +20,5 @@ jobs:
         pip install chocomufin==0.0.4
     - name: Run ChocoMufin
       run: |
-        chocomufin generate table.csv ./**/*.xml
+        chocomufin generate table.csv ./data/**/*.xml
         cat table.csv
