@@ -1,32 +1,49 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
-name: HTR United Report
-
-on: [push, pull_request]
-
+# This file has been generated automatically with HTR-United <3 Github Actions form
+name: HUM Generator
+'on':
+  - push
+  - pull_request
 jobs:
-  test:
+  HTR_United_Metadata_Generator:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install htr-united-metadata-generator htruc
-    - name: Run Report
-      run: |
-        humGenerator --group ./data/**/*.xml --github-envs --to-json updated_metrics.json
-        cat envs.txt >> $GITHUB_ENV
-    - name: Automatically update the catalog's volume key
-      run: |
-        htruc update-volumes htr-united.yml updated_metrics.json --inplace
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add htr-united.yml
-        git commit -m "[Automatic] Update of the Catalog" || echo "Nothing to commit"
-        git push
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install htr-united-metadata-generator htruc anybadge
+      - name: Run Report
+        run: |
+          humGenerator --chars -n NFD --parse alto --group ./data/*.xml --github-envs --to-json updated_metrics.json
+          cat envs.txt >> $GITHUB_ENV
+      - name: Get HTR United Badge Template
+        if: github.ref == 'refs/heads/master'
+        uses: andymckay/get-gist-action@master
+        with:
+          gistURL: https://gist.github.com/PonteIneptique/7813bb99f234b334fbf9c6c429ec2406
+      - name: Automatically update the Catalog & the Badges
+        if: github.ref == 'refs/heads/master'
+        run: |-
+          htruc update-volumes htr-united.yml updated_metrics.json --inplace
+          # Generate badges
+          mkdir -p badges
+          anybadge --value=${{ env.HTRUNITED_CHARS }} --file=badges/characters.svg --label=Characters --color=#007ec6 --overwrite --template=${{ steps.get.outputs.file }}
+          anybadge --value=${{ env.HTRUNITED_REGNS }} --file=badges/regions.svg --label=Regions --color=#007ec6 --overwrite --template=${{ steps.get.outputs.file }}
+          anybadge --value=${{ env.HTRUNITED_LINES }} --file=badges/lines.svg --label=Lines --color=#007ec6 --overwrite --template=${{ steps.get.outputs.file }}
+          anybadge --value=${{ env.HTRUNITED_FILES }} --file=badges/files.svg --label="XML Files" --color=#007ec6 --overwrite --template=${{ steps.get.outputs.file }}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add htr-united.yml ./badges/
+          git commit -m "[Automatic] Update the Catalog & the Badges" || echo "Nothing to commit"
+          git push || echo "Nothing to push"
+      - uses: rymndhng/release-on-push-action@master
+        if: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push' }}
+        with:
+          bump_version_scheme: patch
+          use_github_release_notes: true
