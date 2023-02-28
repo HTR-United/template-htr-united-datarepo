@@ -1,7 +1,5 @@
-
-
 # This file has been generated automatically with HTR-United <3 Github Actions form
-name: HTR United Workflow
+name: HUMG Generator
 'on':
   - push
   - pull_request
@@ -43,9 +41,4 @@ jobs:
           git add ./badges/
           git commit -m "[Automatic] Update the Badges" || echo "Nothing to commit"
           git push || echo "Nothing to push"
-      - uses: rymndhng/release-on-push-action@master
-        if: ${{ github.ref == 'refs/heads/master' && github.event_name == 'push' }}
-        with:
-          bump_version_scheme: patch
-          use_github_release_notes: true
 
