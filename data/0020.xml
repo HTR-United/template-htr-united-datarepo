@@ -443,16 +443,6 @@
           
         </TextBlock>
         
-        <TextBlock HPOS="792"
-                   VPOS="896"
-                   WIDTH="1"
-                   HEIGHT="1"
-                   ID="eSc_textblock_7e8f87ac"
-                   >
-          <Shape><Polygon POINTS="792 896 792 897 793 897 793 896"/></Shape>
-          
-        </TextBlock>
-        
 
         
       </PrintSpace>
