@@ -1,33 +1,27 @@
-Title of your dataset
-=====================
+Moonshines
+==========
 
-
-**You can delete the following three paragraphs, they are just there to explain what's going on**
-
-
-*Notes on the template: you need to change the htr-united.yml file here so that you repository is correctly documented. Check https://htr-united.github.io/document-your-data.html to generate one.*
-
-*Your data should go in the [./data](./data) folder where they should be put in subfolder, such as `./data/manuscript1/alto.xml`*
-
-*The template contains the tools used by HTR-United, they are configured so that you don't need to do it yourself. This will allow for some quality control.*
-
+![characters badge](badges/characters.svg) ![regions badge](badges/regions.svg) ![lines badge](badges/lines.svg) ![files badge](badges/files.svg) 
 
 ## License
 
-Complete here
+CC-BY 4.0
 
 ## Description
 
-Complete here
+This dataset is composed of pages of text written in 2023 by a single person, copying texts taken from Guillaume Apollinaire's poems published in [*Alcools*](https://www.gutenberg.org/cache/epub/15462/pg15462.txt). 
 
-## Extent
+The dataset is divided into two parts: 
 
-Complete here
+- `data/` which is intended to train transcription models,
+- `test/` which is intended for test.
 
 ## Transcription guidelines
 
-Complete here.
+The transcription strictly follows what is written on the images, including accentuation or capitalization errors.
 
-## Sources
+The segmentation follows the SegmOnto ontology and mostly relies on `MainZone` and `DefaultLine`.
 
-Complete here.
+## Possible limitations
+
+Since the text follows the structure of *Alcools*, there is almost no ponctuation in this ground truth. Besides, most of the lines start with a capital letter.
