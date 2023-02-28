@@ -30,7 +30,7 @@
                    WIDTH="4534"
                    HEIGHT="6935"
                    ID="eSc_textblock_2fbe3ca6"
-                   >
+                   TAGREFS="BT5053">
           <Shape><Polygon POINTS="4158 140 3987 483 4158 654 4158 962 4096 1103 3987 1212 3492 1352 3472 1446 3706 1559 3851 1792 4564 1855 4611 2038 4236 2116 2026 2194 1512 2334 1383 2615 1134 2708 1574 2837 4408 2868 4424 3036 3024 3207 2802 3317 1418 3317 1165 3379 1418 3445 2615 3383 3831 3554 3991 3741 4205 3835 4190 4018 2073 4190 1898 4256 1835 4486 1524 4595 2135 4708 3956 4708 4205 4864 4174 5219 3971 5297 2260 5406 1652 5530 1586 5640 1637 5706 1929 5753 1976 5920 2073 5955 4346 6049 4533 6298 4533 6559 4314 6825 947 6953 3114 7012 140 7012 77 5593 77 3211 124 3129 93 187 140 124 2822 77"/></Shape>
           
           
@@ -406,116 +406,6 @@
                     HEIGHT="308"></String>
           </TextLine>
 
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="1403"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_94ee4716"
-                   >
-          <Shape><Polygon POINTS="3 1407 0 1407 0 1403 3 1403"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="2276"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_6d050caa"
-                   >
-          <Shape><Polygon POINTS="3 2280 0 2280 0 2276 3 2276"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="2634"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_491e64fb"
-                   >
-          <Shape><Polygon POINTS="0 2634 3 2634 3 2638 0 2638"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="2821"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_757d299d"
-                   >
-          <Shape><Polygon POINTS="3 2825 0 2825 0 2821 3 2821"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="4552"
-                   VPOS="93"
-                   WIDTH="261"
-                   HEIGHT="183"
-                   ID="eSc_textblock_2817b340"
-                   >
-          <Shape><Polygon POINTS="4813 171 4751 276 4552 229 4552 171 4739 93"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="343"
-                   WIDTH="3"
-                   HEIGHT="3"
-                   ID="eSc_textblock_3ba64c03"
-                   >
-          <Shape><Polygon POINTS="0 343 3 343 3 346 0 346"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="3523"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_f8efc81f"
-                   >
-          <Shape><Polygon POINTS="3 3527 0 3527 0 3523 3 3523"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="4724"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_15194f22"
-                   >
-          <Shape><Polygon POINTS="3 4728 0 4728 0 4724 3 4724"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="5425"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_6202c6b6"
-                   >
-          <Shape><Polygon POINTS="0 5425 3 5425 3 5429 0 5429"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="6969"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_45cf89f0"
-                   >
-          <Shape><Polygon POINTS="3 6973 0 6973 0 6969 3 6969"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="3227"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_5471c6d3"
-                   >
-          <Shape><Polygon POINTS="0 3227 3 3227 3 3231 0 3231"/></Shape>
           
         </TextBlock>
         

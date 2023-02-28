@@ -426,26 +426,6 @@
           
         </TextBlock>
         
-        <TextBlock HPOS="0"
-                   VPOS="4630"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_cb024bb4"
-                   >
-          <Shape><Polygon POINTS="3 4634 0 4634 0 4630 3 4630"/></Shape>
-          
-        </TextBlock>
-        
-        <TextBlock HPOS="0"
-                   VPOS="6470"
-                   WIDTH="3"
-                   HEIGHT="4"
-                   ID="eSc_textblock_6c7e869e"
-                   >
-          <Shape><Polygon POINTS="3 6474 0 6474 0 6470 3 6470"/></Shape>
-          
-        </TextBlock>
-        
 
         
       </PrintSpace>
