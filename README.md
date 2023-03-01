@@ -1,7 +1,13 @@
+<img src="./asset/moonshines.png" width="150" align="right">
+
 Moonshines
 ==========
 
+
+![CC BY 4.0](https://img.shields.io/badge/license-CC--BY-lightgrey)
+
 ![characters badge](badges/characters.svg) ![regions badge](badges/regions.svg) ![lines badge](badges/lines.svg) ![files badge](badges/files.svg) 
+
 
 ## License
 
