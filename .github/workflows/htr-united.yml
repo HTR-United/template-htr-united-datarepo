@@ -72,8 +72,13 @@ jobs:
           pip install chocomufin
       - name: Run ChocoMufin
         run: |
-          chocomufin generate table.csv ./data/*.xml
-          cat table.csv
+          chocomufin generate characters.csv ./data/*.xml
+          cat characters.csv
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add characters.csv
+          git commit -m "[Automatic] Update the character table" || echo "Nothing to commit"
+          git push || echo "Nothing to push"
   HTRVX:
     runs-on: ubuntu-latest
     steps:
