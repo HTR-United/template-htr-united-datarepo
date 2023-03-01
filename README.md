@@ -5,7 +5,7 @@ Moonshines
 
 ## License
 
-This dataset and model are published under the CC-BY 4.0 License.
+This dataset is published under the CC-BY 4.0 License.
 
 To cite this dataset:
 
