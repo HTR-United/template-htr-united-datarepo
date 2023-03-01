@@ -1,11 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "If you use this dataset, please cite it as below."
+type: dataset
 authors:
 - family-names: "Chagué"
   given-names: "Alix"
   orcid: "https://orcid.org/0000-0002-0136-4434"
 title: "moonshines"
 version: 1.0.0
-doi: 10.5281/zenodo.607720783
 date-released: 2023-02-28
-url: "https://github.com/alix-tz/moonshines"
+repository-code: "https://github.com/alix-tz/moonshines"
+identifiers:
+  - type: doi
+    value: 0.5281/zenodo.607720783
+    description: "This is the DOI of the latest version available."
