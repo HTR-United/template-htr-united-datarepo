@@ -6,7 +6,7 @@ authors:
   given-names: "Alix"
   orcid: "https://orcid.org/0000-0002-0136-4434"
 title: "moonshines"
-version: 1.0.0
+version: 2.0.0
 date-released: 2023-02-28
 repository-code: "https://github.com/alix-tz/moonshines"
 identifiers:
